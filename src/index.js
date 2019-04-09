@@ -1,52 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CommentDetail from './CommentDetail'
 //import faker from 'faker'; //TODO INSTALL THIS DEPENDENCY
 
 const App = () => {
+  const data = {
+    name: 'SAM',
+    comment: 'Hi this is my comment',
+    date: 'Today at 5 pm'
+  }
   return (
   <div className="ui ontainer comments">
-    <div className="comment">
-      <a href="/" className="avatar">
-        <img alt="avatar" />
-      </a>
-      <div className="content">
-        <a href="/" className="author">
-          Sam
-        </a>
-        <div className="metadata">
-          <span className="date">Today at 6:00PM</span>
-        </div>
-        <div className="text">Nice Blog post!</div>
-      </div>
-    </div>
-    <div className="comment">
-      <a href="/" className="avatar">
-        <img alt="avatar" />
-      </a>
-      <div className="content">
-        <a href="/" className="author">
-          Sam
-        </a>
-        <div className="metadata">
-          <span className="date">Today at 6:00PM</span>
-        </div>
-        <div className="text">Nice Blog post!</div>
-      </div>
-    </div>
-    <div className="comment">
-      <a href="/" className="avatar">
-        <img alt="avatar" />
-      </a>
-      <div className="content">
-        <a href="/" className="author">
-          Sam
-        </a>
-        <div className="metadata">
-          <span className="date">Today at 6:00PM</span>
-        </div>
-        <div className="text">Nice Blog post!</div>
-      </div>
-    </div>
+    <CommentDetail comment={data}></CommentDetail>
   </div>
   );
 }
