@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail'
-//import faker from 'faker'; //TODO INSTALL THIS DEPENDENCY
+import faker from 'faker'; 
 
 const App = () => {
   const data = {
