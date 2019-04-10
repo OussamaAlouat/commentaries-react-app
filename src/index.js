@@ -3,15 +3,30 @@ import ReactDOM from 'react-dom';
 import CommentDetail from './CommentDetail'
 import faker from 'faker'; 
 
+
+
 const App = () => {
-  const data = {
-    name: 'SAM',
-    comment: 'Hi this is my comment',
-    date: 'Today at 5 pm'
-  }
   return (
   <div className="ui ontainer comments">
-    <CommentDetail comment={data}></CommentDetail>
+    <h1>WELLCOME TO COMMENTS</h1>
+    <CommentDetail
+      author = {faker.name.firstName()}
+      fromTo = {faker.date.past(3, new Date()).toLocaleString()}
+      comment = {faker.random.words()}
+      avatar =  {faker.image.avatar()}
+    />
+    <CommentDetail
+      author = {faker.name.firstName()}
+      fromTo = {faker.date.past(4, new Date()).toLocaleString()}
+      comment = {faker.random.words()}
+      avatar =  {faker.image.avatar()}
+    />
+    <CommentDetail
+      author = {faker.name.firstName()}
+      fromTo = {faker.date.past(5, new Date()).toLocaleString()}
+      comment = {faker.random.words()}
+      avatar =  {faker.image.avatar()}
+    />
   </div>
   );
 }
