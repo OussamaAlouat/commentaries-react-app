@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CommentDetail from './CommentDetail'
 import faker from 'faker'; 
 
-
+import CommentDetail from './CommentDetail'
 
 const App = () => {
   return (
-  <div className="ui ontainer comments">
+  <div className="ui container comments">
     <h1>WELLCOME TO COMMENTS</h1>
     <CommentDetail
       author = {faker.name.firstName()}
